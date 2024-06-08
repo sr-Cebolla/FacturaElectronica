@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Factura Electronica</title>
+	<meta name="description" content="Cardio is a free one page template made exclusively for Codrops by Luka Cvetinovic" />
+	<meta name="keywords" content="html template, css, free, one page, gym, fitness, web design" />
+	<meta name="author" content="Luka Cvetinovic for Codrops" />
+	<!-- Favicons (created with http://realfavicongenerator.net/)-->
+	<link rel="apple-touch-icon" sizes="57x57" href=" static/img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="static/img/favicons/apple-touch-icon-60x60.png">
+	<link rel="icon" type="image/png" href="static/img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="static/img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="static/img/favicons/manifest.json">
+	<link rel="shortcut icon" href="static//img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#00a8ff">
+	<meta name="msapplication-config" content="static/img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<!-- Normalize -->
+	<link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+	<!-- Owl -->
+	<link rel="stylesheet" type="text/css" href="static/css/owl.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" type="text/css" href="static/css/animate.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.1.0/css/font-awesome.min.css">
+	<!-- Elegant Icons -->
+	<link rel="stylesheet" type="text/css" href="static/fonts/eleganticons/et-icons.css">
+	<!-- Main style -->
+	<link rel="stylesheet" type="text/css" href="static/css/cardio.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+	
+</head>
+
+<body>
+	<div class="preloader">
+		<img src="static/img/loader.gif" alt="Preloader image">
+	</div>
+	<nav class="navbar">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="static/img/logo.png"  style="width: 60px; height:auto; "></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right main-nav">
+					<li><a href="#def">Factura Electronica</a></li>
+					<li><a href="#vent">Ventajas y deventajas</a></li>
+					<li><a href="#efectos">Efectos</a></li>
+					<li><a href="#reque">Requerimientos de implementacion</a></li>
+					<li><a href="{% url 'login' %} "class="btn btn-orange">Iniciar Sesion</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+	<header id="intro">
+		<div class="container">
+			<div class="table">
+				<div class="header-text">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h3 class="light white">Efectos en las empresas debido a la implementacion de la</h3>
+							<h1 class="white typed">Factura Electronica en El Salvador </h1>
+							<span class="typed-cursor">|</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	
+
+	<section id="def" class="section section-padded">
+		<div class="container">
+			<div class = "def_p">
+				<p  style="font-size: 24px; text-align: justify; padding: 20px;">{{definicion01.contenido}}</p>
+				<p 	style="font-size: 24px; text-align: justify; padding: 20px;">{{definicion02.contenido}}</p>
+				<p 	style="font-size: 24px; text-align: justify; padding: 20px;">{{definicion03.contenido}}</p>
+				
+				
+			</div>
+		</div>
+
+		
+	</section>
+
+	<section id="vent" class="section section-padded">
+		<div class="container">
+			<div>
+				<table>
+					<thead>
+						<tr>
+							<th style="text-align: center;">Ventajas</th>
+							<th style="text-align: center;">Desventajas</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>{{reque01.ventajas}}</td>
+							<td>{{reque01.desventajas}}</td>
+						</tr>
+						<tr>
+							<td>{{reque02.ventajas}}</td>
+							<td>{{reque02.desventajas}}</td>
+						</tr>
+						<tr>
+							<td>{{reque03.ventajas}}</td>
+							<td>{{reque03.desventajas}}</td>
+						</tr>
+						<tr>
+							<td>{{reque04.ventajas}}</td>
+							<td>{{reque04.desventajas}}</td>
+						</tr>
+						<tr>
+							<td>{{reque05.ventajas}}</td>
+							<td>{{reque05.desventajas}}</td>
+						</tr>
+						<tr>
+							<td>{{reque06.ventajas}}</td>
+							<td>{{reque06.desventajas}}</td>
+						</tr>
+					</tbody>
+				</table>
+
+			
+			</div>
+		</div>
+	</section>
+
+
+	<section id="efectos" class="section section-padded">
+		<div class="container">
+			<div>
+				<p style="font-size: 24px; text-align: justify; padding: 50px;">La implementación de la facturación electrónica en El Salvador ha traido una serie de efectos significativos en diversos ámbitos, incluyendo la administración pública, las empresas, los consumidores y el medio ambiente.
+				A continuación, se detallan los mas relevantes presentados hasta el momento:</p>
+			</div>
+			<table>
+				<thead>
+					<tr>
+						<th style="text-align: center;">Medioambientales</th>
+						<th style="text-align: center;">Poblacion</th>
+						<th style="text-align: center;">Emisores</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{{medio01.beneficios_generados}}</td>
+						<td>{{pob01.impacto}}</td>
+						<td>{{eco01.impacto}}</td>
+						
+					</tr>
+					<tr>
+						<td>{{medio02.beneficios_generados}}</td>
+						<td>{{pob02.impacto}}</td>
+						<td>{{eco02.impacto}}</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>{{pob03.impacto}}</td>
+						<td>{{eco03.impacto}}</td>
+					</tr>
+					<td></td>
+						<td>{{pob04.impacto}}</td>
+						<td></td>
+					</tr>
+					<td></td>
+						<td>{{pob05.impacto}}</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p style="font-size: 24px; text-align: justify; padding: 50px;">Debido a los efectos presentados anteriormente, los emisores han implementado la factura electronica en
+				un ritmo mas lento de lo previsto, ya que para en mayo del 2024 se tenia propuesto tener al menos 7,000 emisores activos, pero como podremos observar
+				en la grafica siguiente, solamente se logro 3700.
+			</p>
+			<canvas id="Emisores" width="400" height="200"></canvas>
+
+			</div>
+
+			
+
+		</div>
+		
+	</section>
+
+	
+
+	<section id="reque" class="section section-padded">
+		<div class="container">
+			<p style="font-size: 24px; text-align: justify; padding: 50px;">La implementación de la factura electrónica en El Salvador es un proceso que requiere cumplir
+				con ciertos requisitos establecidos por la Dirección General de Impuestos Internos (DGII) entre ellas estan:
+			</p>
+
+			<ul class="list-group"  style="font-size: 20px;">
+				<li class="list-group-item list-group-item-danger">1 - {{reque01.requerimientos}}</li>
+				<li class="list-group-item list-group-item-danger">2 - {{reque02.requerimientos}}</li>
+				<li class="list-group-item list-group-item-danger">3 - {{reque03.requerimientos}}</li>
+				<li class="list-group-item list-group-item-danger">4 - {{reque04.requerimientos}}</li>
+				<li class="list-group-item list-group-item-danger">5 - {{reque05.requerimientos}}</li>
+				<li class="list-group-item list-group-item-danger">6 - {{reque06.requerimientos}}</li>
+
+			  </ul>
+
+		</div>
+	</section>
+
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 text-center-mobile">
+					<h3 class="white">Reserve a Free Trial Class!</h3>
+					<h5 class="light regular light-white">Shape your body and improve your health.</h5>
+					<a href="#" class="btn btn-blue ripple trial-button">Start Free Trial</a>
+				</div>
+				<div class="col-sm-6 text-center-mobile">
+					<h3 class="white">Opening Hours <span class="open-blink"></span></h3>
+					<div class="row opening-hours">
+						<div class="col-sm-6 text-center-mobile">
+							<h5 class="light-white light">Mon - Fri</h5>
+							<h3 class="regular white">9:00 - 22:00</h3>
+						</div>
+						<div class="col-sm-6 text-center-mobile">
+							<h5 class="light-white light">Sat - Sun</h5>
+							<h3 class="regular white">10:00 - 18:00</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row bottom-footer text-center-mobile">
+				<div class="col-sm-8">
+					<p>&copy; 2015 All Rights Reserved. Powered by <a href="http://www.phir.co/">PHIr</a> exclusively for <a href="http://tympanus.net/codrops/">Codrops</a></p>
+				</div>
+				<div class="col-sm-4 text-right text-center-mobile">
+					<ul class="social-footer">
+						<li><a href="http://www.facebook.com/pages/Codrops/159107397912"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="http://www.twitter.com/codrops"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://plus.google.com/101095823814290637419"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Holder for mobile navigation -->
+	<div class="mobile-nav">
+		<ul>
+		</ul>
+		<a href="#" class="close-link"><i class="arrow_up"></i></a>
+	</div>
+	<!-- Scripts -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+	<script src="static/js/owl.carousel.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+	<script src="static/js/wow.min.js"></script>
+	<script src="static/js/typewriter.js"></script>
+	<script src="static/js/jquery.onepagenav.js"></script>
+	<script src="static/js/main.js"></script>
+	<script>
+
+	function formatDate(dateString) {
+    // Crear un objeto de fecha a partir de la cadena de fecha
+    let date = new Date(dateString);
+    
+    // Array con los nombres de los meses
+    let months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+    
+    // Obtener el nombre del mes y el año
+    let monthName = months[date.getMonth()];
+    let year = date.getFullYear();
+    
+    // Formatear la fecha como "mes año"
+    return `${monthName} ${year}`;
+}
+		
+
+
+		let fechas = JSON.parse("{{fechas|escapejs}}");
+		let cantidades = JSON.parse("{{cantidad|escapejs}}");
+		let fechasFormateadas = fechas.map(dateString => formatDate(dateString));
+
+
+        let miCanvas = document.getElementById('Emisores').getContext('2d');
+		var chart = new Chart(miCanvas,{
+			type:"bar",
+			data:{
+				labels: fechasFormateadas,
+				datasets:[{
+					label: "Emisores aceptados",
+					backgroundColor: "red",
+					borderColor: "rgb(255,255,255)",
+					data: cantidades
+				}]
+			}
+		})
+        
+      
+    </script>
+</body>
+
+</html>
